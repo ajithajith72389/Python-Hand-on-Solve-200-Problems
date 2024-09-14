@@ -4,6 +4,5 @@
 name = input("Enter your Name: ")
 age = int(input("Enter your Age: "))
 
-for i in range(age,  100):
-    if age + i == 100:
-        print(f"You will turn  100 years old in the year: {2024 + i} ") 
+year = (2024 - age) + 100
+print(f"You will  be 100 years old in the year {year}")  # The \n is used to create
