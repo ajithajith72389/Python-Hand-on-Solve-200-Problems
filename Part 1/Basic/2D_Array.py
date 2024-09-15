@@ -12,7 +12,7 @@
 no_rows = int(input("Enter number of rows: "))
 no_cols = int(input("Enter number of cols: "))
 
-multi_list = [[2 for col in range(no_cols)] for row in range(no_rows)]
+multi_list = [[0 for col in range(no_cols)] for row in range(no_rows)]
 
 for row in  range(no_rows):
     for col in range(no_cols):
