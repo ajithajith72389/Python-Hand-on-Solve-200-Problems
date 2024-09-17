@@ -9,9 +9,9 @@
 # 88888888                                                                                                      
 # 999999999  
 
-num = int(input("Enter  a number: "))
+no_rows = int(input("Enter  a number: "))
 
-for  i in range(1, num + 1):
-    for j in range(1, i + 1):
-        print(i)
-
+for  no_rows in range(1, no_rows + 1):
+    for _ in range(no_rows):
+        print(no_rows, end="")
+    print()
