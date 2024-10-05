@@ -1,3 +1,4 @@
+# TCS NQT PROBLEM 2024 
 text = input()
 
 text = text.split(" ")
