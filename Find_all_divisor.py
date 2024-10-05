@@ -1,3 +1,4 @@
+# TCS NQT PROBLEM
 num = int(input())
 
 total_sum = 0
