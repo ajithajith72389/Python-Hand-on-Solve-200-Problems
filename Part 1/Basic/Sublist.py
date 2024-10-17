@@ -10,18 +10,18 @@
 def is_Sublist(l, s):
     subset = False
     if s == []:
-        return True
+        subset = True
     elif  s == l:
-        return True
+        subset = True
     elif  len(s) > len(l):
-        return False
+        subset = False
     else:
         for i in range(len(l)):
             if l[i] ==  s[0]:
                 n = 1
-                while n < len(s):
-                    l[i+n] = s[n]
-                    n = n + 1
+                while (n < len(s)) and (l[i+n] == s[n]):
+                    n += 1
+                if n == len(s):
                     subset = True
     return subset
 
@@ -30,7 +30,7 @@ def is_Sublist(l, s):
 
 
 
-a = [2,4,3,5,7]
+a = [1,2,4,3,5,7]
 b = [4,3]
 c = [3,7]
 print(is_Sublist(a, b))
