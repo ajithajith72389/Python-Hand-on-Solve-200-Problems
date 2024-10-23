@@ -5,3 +5,25 @@
 # The method is named after Julius Caesar, who used it in his private correspondence.
 # plaintext:  defend the east wall of the castle
 # ciphertext: efgfoe uif fbtu xbmm pg uif dbtumf
+
+plaintext = "defend the east wall of the castle"
+plaintext_copy = "Defend The East Wall Of The Castle"
+
+
+shift  = 1
+
+def  caesarCipher(plaintext, shift):
+    cipherText = ""
+    for char in plaintext:
+        if char.islower():
+            shift_char = chr(((ord(char) - ord('a') + shift) % 26) + ord('a'))
+            cipherText = cipherText + shift_char
+        elif char.isupper():
+            shift_char = chr(((ord(char) - ord('A') + shift) % 96) + ord('A'))
+            cipherText = cipherText + shift_char
+        else:
+            cipherText = cipherText + chr(ord(char))
+    return cipherText
+
+print(caesarCipher(plaintext, shift))
+print(caesarCipher(plaintext_copy, shift))
