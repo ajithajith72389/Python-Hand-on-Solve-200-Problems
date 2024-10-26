@@ -37,3 +37,8 @@ for num in range(len(lst1)):
     i = i - 1
     
 print(total)
+
+
+# use | this  operator for OR Gate 
+
+print("Binary Addition: ", num1 | num2)
