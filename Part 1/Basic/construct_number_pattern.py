@@ -11,7 +11,7 @@
 
 no_rows = int(input("Enter  a number: "))
 
-for  no_rows in range(1, no_rows + 1):
-    for _ in range(no_rows):
-        print(no_rows, end="")
+for  num in range(1, no_rows + 1):  # range(1, 4+1)
+    for _ in range(num):    # range(0, 3)
+        print(num, end="")
     print()
